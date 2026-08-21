@@ -4,14 +4,25 @@ const dotenv = require("dotenv").config();
 const app= express();
 const cors = require("cors");
 const PORT = process.env.PORT || 3000;
-const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:5173";
-connectDB();
-app.use(express.json());
-app.use(cors({
-  origin: FRONTEND_URL,
-  credentials:true
-}));
 
+connectDB();
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://dihadi-phi.vercel.app",
+  "https://dihadi-rhsb2u4s9-vikas-s-project.vercel.app"
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true
+}));
+app.use(express.json());
 
 app.use("/users",require("./routes/user"));
 app.use("/works",require("./routes/work"));
