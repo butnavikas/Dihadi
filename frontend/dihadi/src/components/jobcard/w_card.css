@@ -1,0 +1,22 @@
+/* Keeps all cards equal in height */
+.custom-card {
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Clamps description to 2 lines max with "..." */
+.card-details-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 2.8em; /* Holds vertical space even for 1-line text */
+}
+
+/* Metadata styling */
+.small-text li {
+  margin-bottom: 3px;
+  color: #444;
+}

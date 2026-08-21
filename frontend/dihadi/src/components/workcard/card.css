@@ -1,0 +1,22 @@
+/* Card uniform height rules */
+.custom-card {
+  min-height: 280px; /* Standard card height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Clamp details text to exactly 2 lines max with "..." */
+.card-details-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 2.8em; /* Keeps space uniform even for short descriptions */
+}
+
+/* Compact details list */
+.small-text li {
+  margin-bottom: 3px;
+  color: #444;
+}

@@ -1,0 +1,27 @@
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5vh;
+    margin:1%;
+    
+    height: 12vh;
+    margin-left: 75vh;
+    margin-right: 75vh;
+    background-color: rgb(240, 240, 224);
+     box-shadow: 1px 6px  rgb(225, 225, 190);
+}
+.navfilters{
+    
+    display: flex;
+    padding:2%;
+    margin-top: 1%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navfilterbtn{
+    border: none;
+    
+
+}

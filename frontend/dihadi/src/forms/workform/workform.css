@@ -1,0 +1,14 @@
+.container_work_form{
+    padding: 5%;
+    padding-top: 1%;
+    margin-top: 2vh;
+  
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color:beige;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5vh;
+
+}

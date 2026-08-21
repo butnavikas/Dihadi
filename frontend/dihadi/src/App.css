@@ -1,0 +1,20 @@
+/* App.css */
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Configure the full page as a vertical flexbox */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main container takes up all available height and leaves bottom room */
+.main-content {
+  flex: 1 0 auto;
+  padding-bottom: 4rem; /* <--- Prevents cards from touching or overlapping footer */
+}

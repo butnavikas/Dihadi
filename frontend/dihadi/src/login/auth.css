@@ -1,0 +1,17 @@
+/* Container forces min height so footer stays pinned down nicely */
+.auth-page-container {
+  min-height: calc(100vh - 120px); /* Account for navbar and footer height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+/* Card styling */
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background-color: #ffffff;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+}

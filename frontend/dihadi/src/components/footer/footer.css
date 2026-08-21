@@ -1,0 +1,32 @@
+.custom-footer {
+  position: relative !important; 
+  width: 100%;
+  margin-top: auto;
+  background-color: #1a1d20 !important;
+  border-top: 1px solid #2d3238;
+  padding: 12px 0; 
+}
+
+.custom-footer a {
+  color: #adb5bd !important;
+  font-size: 0.85rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.custom-footer a:hover {
+  color: #0d6efd !important;
+  text-decoration: underline !important;
+}
+
+.custom-footer .copyright-text {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+footer {
+  position: relative !important;
+  width: 100%;
+  margin-top: auto !important; /* Pushes to bottom in flex layout */
+  background-color: #1a1e21 !important;
+  padding: 1rem 0 !important; /* Fixed tight padding */
+  z-index: 10;
+}

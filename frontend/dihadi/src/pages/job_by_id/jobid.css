@@ -1,0 +1,205 @@
+.job-details-page {
+  min-height: 75vh;
+  padding: 30px 15px;
+  background: #f8f9fa;
+}
+
+.job-details-card {
+  max-width: 650px;
+  margin: 20px auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* Top section */
+
+.job-top {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.job-top h2 {
+  margin: 8px 0 3px;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.work-badge {
+  display: inline-block;
+  background: #e8f5e9;
+  color: #198754;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.location {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+}
+
+.pay {
+  color: #198754;
+  font-size: 18px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Details section */
+
+.work-details-section {
+  padding: 18px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.work-details-section h5 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.work-details-section p {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Information grid */
+
+.work-info {
+  padding: 18px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.work-info > div {
+  background: #f8f9fa;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.work-info span {
+  display: block;
+  color: #777;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.work-info strong {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Edit / Delete buttons */
+
+.job-actions {
+  padding: 15px 20px;
+  border-top: 1px solid #eee;
+  display: flex;
+  gap: 10px;
+}
+
+.job-actions button {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.edit-btn {
+  border: 1px solid #0d6efd;
+  background: white;
+  color: #0d6efd;
+}
+
+.edit-btn:hover {
+  background: #0d6efd;
+  color: white;
+}
+
+.delete-btn {
+  border: 1px solid #dc3545;
+  background: white;
+  color: #dc3545;
+}
+
+.delete-btn:hover {
+  background: #dc3545;
+  color: white;
+}
+
+/* Loading */
+
+.job-loading {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+}
+
+/* Not found */
+
+.job-not-found {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.job-not-found h4 {
+  color: #555;
+}
+
+.job-not-found button {
+  border: none;
+  background: #0d6efd;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.job-not-found button:hover {
+  opacity: 0.9;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .job-details-page {
+    padding: 20px 12px;
+  }
+
+  .job-top {
+    flex-direction: column;
+  }
+
+  .pay {
+    font-size: 16px;
+  }
+
+  .work-info {
+    grid-template-columns: 1fr;
+  }
+
+  .job-actions {
+    flex-direction: column;
+  }
+}
