@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from "./components/navbar/navbar";
-import Footer from './components/footer/Footer';
+import Footer from './components/footer/footer';
 import Home from "./pages/allworks/Home";
 import Signup from './signup/signup';
 import Login from './login/login';
